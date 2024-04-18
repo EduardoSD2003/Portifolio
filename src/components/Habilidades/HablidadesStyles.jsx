@@ -12,6 +12,7 @@ export const TituloHabilidades = styled.h1`
 export const HabilidadesContainer = styled.div`
   height: 100vh;
   width: 100vw;
+  position: absolute;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -36,10 +37,13 @@ export const HabilidadesConteudo = styled.div`
 
   @media ${device.sm} {
     width: 100vw;
+    align-items: center;
+    padding: 10px 50px;
   }
 
   @media ${device.md} {
-    margin-bottom: 100px;
+    margin-top: 10%;
+    padding: 0;
   }
 
   p {
@@ -48,6 +52,7 @@ export const HabilidadesConteudo = styled.div`
 
     @media ${device.sm} {
       width: 85vw;
+      text-align: center;
     }
   }
 
@@ -63,21 +68,60 @@ export const HabilidadesConteudoUlContainer = styled.div`
   max-height: 272px;
   width: 65%;
   min-width: 240px;
+
+  @media ${device.sm} {
+    height: auto;
+    width: 80vw;
+  }
 `;
 
 export const HabilidadesConteudoUl = styled.ul`
   display: flex;
-  gap: 10px;
+  gap: 20px;
   flex-wrap: wrap;
   list-style: none;
-  max-height: 272px;
-  justify-content: space-evenly;
-  padding: 25px;
+  height: 200px; /* Set a fixed height for the component */
+  overflow-y: auto; /* Add a scrollbar if necessary */
+  justify-content: flex-start;
+  padding: 30px;
   border-radius: 25% 43% 10% 25% / 0% 27% 0% 0%;
   background-color: #37373785;
 
   @media ${device.md} {
-    width: 45vw;
+    border-radius: 10%;
+    gap: 20px;
+    width: 50vw;
+  }
+
+  @media ${device.sm} {
+    overflow-y: hidden;
+    width: 65vw;
+    height: 165px;
+    border-radius: 10%;
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+`;
+
+export const HabilidadesConteudoImg = styled.img`
+  height: 70px;
+  z-index: 3;
+  
+
+  @media ${device.sm} {
+    height: 40px;
+  }
+
+  &:hover {
+    cursor: pointer;
+    + span {
+      transition-delay: 0.5s;
+      opacity: 1;
+      visibility: visible;
+      margin-top: 5px;
+    }
   }
 `;
 
@@ -87,43 +131,41 @@ export const HabilidadesConteudoLi = styled.li`
   align-items: center;
   justify-content: center;
   color: #d2cece;
-`;
 
-export const HabilidadesConteudoImg = styled.img`
-  height: 70px;
-  transition: 0.5s;
+  span {
+    flex-wrap: wrap;
+    opacity: 0;
+    margin-top: -8px;
+    font-size: 14px;
+    transition: opacity 0.3s ease, margin-top 0.3s ease;
 
-  @media ${device.sm} {
-    height: 40px;
-  }
-
-  &:hover {
-    cursor: pointer;
-    transform: translateY(-20px);
+    @media ${device.sm} {
+      font-size: 11px;
+    }
   }
 `;
 
 export const SoftSkillsContainer = styled.div`
+
+
   h3 {
     @media ${device.sm} {
-      font-size: 24px;
-      margin-top: 65px;
+      font-size: 16px;
       width: 85vw;
-    }
-    @media ${device.md} {
-      margin-top: 65px;
+      text-align: center;
     }
   }
   p {
     @media ${device.sm} {
-      font-size: 16px;
+      font-size: 12px;
+      text-align: center;
     }
   }
 `;
 
 export const Rodape = styled.footer`
-  position: absolute;
   width: 100vw;
+  position: absolute;
   margin-top: 90vh;
   height: 10vh;
   display: flex;
@@ -133,7 +175,7 @@ export const Rodape = styled.footer`
   background-color: #0000007e;
 
   @media ${device.sm} {
-    gap: 50px;
+    gap: 15px;
   }
 `;
 
@@ -143,7 +185,8 @@ export const RodapeP = styled.p`
   color: #ffffffd0;
 
   @media ${device.sm} {
-    font-size: 14px;
+    text-align: center;
+    font-size: 10px;
   }
 `;
 
@@ -153,9 +196,13 @@ export const RodapeContatos = styled.div`
   width: 10%;
   align-items: center;
 
+  @media ${device.sm} {
+    width: 30%;
+  }
+
   img {
-    @media screen {
-      height: 25px;
+    @media ${device.sm} {
+      height: 3vh;
     }
   }
 `;

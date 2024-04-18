@@ -36,7 +36,6 @@ import { Link } from "react-scroll";
 import { MenuMobile } from "../NavMenu/MeunuMobile/MenuMobile";
 import { useState } from "react";
 import { CgMenuRight } from "react-icons/cg";
-import { useMediaQuery } from 'react-responsive'
 
 function Inicio() {
   const [menuIsVisible, setMenuIsVisible] = useState(false)
@@ -49,7 +48,7 @@ function Inicio() {
         menuIsVisible={menuIsVisible}
         setMenuIsVisible={setMenuIsVisible}
       />
-      <InicioContainer id="inicio">
+      <InicioContainer id="Inicio">
         <HeaderContainer>
           <NavContainer>
             <NavMobile>
@@ -57,7 +56,7 @@ function Inicio() {
               <CgMenuRight onClick={() => setMenuIsVisible(true)}/>
             </NavMobile>
             <SpanLogo>Eduardo Santos</SpanLogo>
-            <UlStyled>
+            {/* <UlStyled>
               <LiStyled>Inicio</LiStyled>
               <LiStyled>
                 <Link
@@ -92,7 +91,7 @@ function Inicio() {
                   Habilidades
                 </Link>
               </LiStyled>
-            </UlStyled>
+            </UlStyled> */}
           </NavContainer>
         </HeaderContainer>
         <MainContainer>

@@ -79,9 +79,7 @@ function Projetos() {
                     <ProjetoImgContainer>
                       <ProjetoImg src={data.url} alt={`${data.url}`} />
                       <ProjetoImgP style={{ textAlign: "end" }}>
-                        <a href="/">View the code</a>
-
-                        <a href="/">Visit the app</a>
+                        <a href={`${data.href}`}>Acesse o código</a>
                       </ProjetoImgP>
                     </ProjetoImgContainer>
                   </ProjetoSlideContainer>

@@ -9,6 +9,7 @@ export const NavContainer = styled.div`
   align-items: center;
   justify-content: end;
   height: 100vh;
+  z-index: 3;
 
   @media ${device.sm} {
     display: none;
@@ -53,15 +54,16 @@ export const NavLI = styled.li`
     width: 5px;
     height: ${props => props.active ? "100px" : "0"};
     border-radius: 10px;
-    background-color: white;
+    background-color: #ffffff;
     top: -50%;
     right: 0;
     transform: translateX(50%);
     transition: height 0.3s ease-in-out;
 
     @media ${device.lg} {
-    height: ${props => props.active ? "60px" : "0"};
+    height: ${props => props.active ? "70px" : "0"};
     }
+
   }
 
 `;

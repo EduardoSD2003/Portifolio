@@ -48,38 +48,48 @@ function Habilidades() {
                 alt=""
                 title="Bootstrap"
               />
-              Bootstrap
+              <span>Bootstrap</span>
             </HabilidadesConteudoLi>
+            
             <HabilidadesConteudoLi>
-              <HabilidadesConteudoImg src={CSSIcon} alt="" title="CSS" /> Css
+              <HabilidadesConteudoImg src={CSSIcon} alt="" title="CSS" />
+              <span>CSS</span>
             </HabilidadesConteudoLi>
+
             <HabilidadesConteudoLi>
-              <HabilidadesConteudoImg src={HTMLIcon} alt="" title="HTML" /> HTML
+              <HabilidadesConteudoImg src={HTMLIcon} alt="" title="HTML" />
+              <span>HTML</span>
             </HabilidadesConteudoLi>
+
             <HabilidadesConteudoLi>
-              <HabilidadesConteudoImg src={JSIcon} alt="" title="JavaScript" />{" "}
-              JavaScript
+              <HabilidadesConteudoImg src={JSIcon} alt="" title="JavaScript" />
+              <span>JavaScript</span>
             </HabilidadesConteudoLi>
+
             <HabilidadesConteudoLi>
-              <HabilidadesConteudoImg src={ReactIcon} alt="" title="React" />{" "}
-              React
+              <HabilidadesConteudoImg src={ReactIcon} alt="" title="React" />
+              <span>React</span>
             </HabilidadesConteudoLi>
+
+            <HabilidadesConteudoLi>
+              <HabilidadesConteudoImg src={TSIcon} alt="" title="TypeScript" />
+              <span>TypeScript</span>
+            </HabilidadesConteudoLi>
+
+            <HabilidadesConteudoLi>
+              <HabilidadesConteudoImg src={TailIcon} alt="" title="Tailwind" />
+              <span>Tailwind</span>
+            </HabilidadesConteudoLi>
+
             <HabilidadesConteudoLi>
               <HabilidadesConteudoImg
                 src={SCIcon}
                 alt=""
                 title="Styled Components"
               />
-              Styled Components
+              <span>Styled Comp.</span>
             </HabilidadesConteudoLi>
-            <HabilidadesConteudoLi>
-              <HabilidadesConteudoImg src={TSIcon} alt="" title="TypeScript" />
-              TypeScript
-            </HabilidadesConteudoLi>
-            <HabilidadesConteudoLi>
-              <HabilidadesConteudoImg src={TailIcon} alt="" title="Tailwind" />
-              Tailwind
-            </HabilidadesConteudoLi>
+
           </HabilidadesConteudoUl>
         </HabilidadesConteudoUlContainer>
         <SoftSkillsContainer>
@@ -87,6 +97,7 @@ function Habilidades() {
           <p>Diciplinado, Engajado, Proativo Focado, Calmo</p>
         </SoftSkillsContainer>
       </HabilidadesConteudo>
+      
 
       <Rodape>
         <RodapeP>

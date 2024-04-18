@@ -12,6 +12,7 @@ export const data = [
     titulo: "Alura NewsLetter",
     descricao: "Uma NewsLetter com artigos relacionados a tecnologia",
     tecs: "react / JavaScript / CSS",
+    href: "https://github.com/EduardoSD2003/Study",
     url: AluraNewsLetter,
   },
   {
@@ -19,6 +20,7 @@ export const data = [
     titulo: "Alura Tecs",
     descricao: "Card com informações sobre temas da tecnologias",
     tecs: "react / react-router / JavaScript",
+    href: "https://github.com/EduardoSD2003/Study",
     url: AluraTecs,
   },
   {
@@ -26,6 +28,7 @@ export const data = [
     titulo: "Alura Organograma",
     descricao: "Projeto para adicionar e remover colaboradores",
     tecs: "react / CSS / JavaScript",
+    href: "https://github.com/EduardoSD2003/Study",
     url: AluraOrganograma,
   },
   {
@@ -33,6 +36,7 @@ export const data = [
     titulo: "Alura Negociacoes",
     descricao: "Elaborado com a finalizade de registrar negociações",
     tecs: "react / typescript / CSS",
+    href: "https://github.com/EduardoSD2003/Study",
     url: AluraNegociacoesTS,
   },
   {
@@ -40,6 +44,7 @@ export const data = [
     titulo: "Study",
     descricao: "Projeto pessoal elaborado para auxiliar nos estudos",
     tecs: "react / StyledComponents / JavaScript",
+    href: "https://github.com/EduardoSD2003/Study",
     url: Study,
   },
   {
@@ -47,6 +52,7 @@ export const data = [
     titulo: "Potimer",
     descricao: "Timer utilizando a tecnica pomodoro",
     tecs: "react / CSS /JavaScript",
+    href: "https://github.com/EduardoSD2003/Study",
     url: Potimer,
   },
 ];

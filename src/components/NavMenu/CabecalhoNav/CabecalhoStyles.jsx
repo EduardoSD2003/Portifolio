@@ -21,7 +21,7 @@ export const SobreHeaderContainer = styled.div`
   padding-top: ${props => props.habilidades ? '0px' : '100px'};
 
   @media ${device.sm} {
-    padding-top: 100px;
+    padding-top: 30px;
   }
 `;
 

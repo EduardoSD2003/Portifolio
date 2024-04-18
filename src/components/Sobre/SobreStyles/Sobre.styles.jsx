@@ -119,6 +119,10 @@ export const SobreConteudoApresentacao = styled.div`
 export const SobreConteudoApresentacaoP = styled.p`
   font-size: 24px;
   color: white;
+
+  @media ${device.sm} {
+    font-size: 16px;
+  }
 `;
 
 export const WhiteCube = styled.img`

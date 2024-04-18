@@ -84,7 +84,7 @@ export const TextosContainer = styled.div`
 
   @media ${device.sm} {
     width: 100%;
-    height: 100vh;
+    height: 80vh;
     align-items: center;
     text-align: center;
     padding-top: 50px;
@@ -122,12 +122,13 @@ export const TecsStyled = styled.div`
 
   @media ${device.sm} {
     width: auto;
-  max-width: 75vw;
+    max-width: 75vw;
+    display: none;
   }
 
   @media ${device.md} {
     width: auto;
-  max-width: 35vw;
+    max-width: 35vw;
     margin-top: 40px;
   }
 
@@ -164,6 +165,7 @@ export const TextoH1 = styled.h1`
   color: aliceblue;
 
   @media ${device.sm} {
+    font-size: 24px;
     width: 100%;
     text-align: center;
   }

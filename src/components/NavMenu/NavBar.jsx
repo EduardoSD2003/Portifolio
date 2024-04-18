@@ -9,6 +9,34 @@ function Navegacao() {
 
   useLayoutEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
+    gsap.to("#Inicio", {
+      scrollTrigger: {
+        trigger: "#Inicio",
+        start: "top center",
+        end: "bottom center",
+        scrub: true,
+        onEnter: () => {
+          gsap.to("#navInicio::after", { height: "100%", duration: 0.3 });
+          setActiveLink("navInicio");
+        },
+        onLeave: () => {
+          gsap.to("#navInicio::after", { height: "0%", duration: 0.3 });
+          setActiveLink(null);
+        },
+        onEnterBack: () => {
+          gsap.to("#navInicio::after", {
+            height: "100%",
+            duration: 0.3,
+          });
+          setActiveLink("navInicio");
+        },
+        onLeaveBack: () => {
+          gsap.to("#navInicio::after", { height: "0%", duration: 0.3 });
+          setActiveLink(null);
+        },
+      },
+    });
+
     gsap.to("#Sobre", {
       scrollTrigger: {
         trigger: "#Sobre",
@@ -90,8 +118,8 @@ function Navegacao() {
   return (
     <NavContainer>
       <NavUL>
-        <NavLI id="navInicio">
-          <Link to="inicio" spy={true} smooth={true} offset={0} duration={500}>
+        <NavLI id="navInicio" active={activeLink === "navInicio"}>
+          <Link to="Inicio" spy={true} smooth={true} offset={0} duration={500}>
             Inicio
           </Link>
         </NavLI>

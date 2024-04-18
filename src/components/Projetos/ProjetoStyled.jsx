@@ -41,6 +41,8 @@ export const ProjetosSlides = styled.div`
   @media ${device.sm} {
     background-color: #00000018;
     width: 80vw;
+    height: 70vh;
+    margin: 5vh auto;
     border-radius: 10px;
   }
 
@@ -72,8 +74,9 @@ export const ProjetoSlideConteudo = styled.div`
 
   @media ${device.sm} {
     padding: 0;
-    height: 0;
     padding: 0;
+    align-items: center;
+    justify-content: center;
   }
 `;
 
@@ -84,7 +87,7 @@ export const ProjetoSlideConteudoH1 = styled.h1`
   color: #ffffff;
 
   @media ${device.sm} {
-    font-size: 12px;
+    font-size: 24px;
     text-align: center;
   }
 
@@ -103,7 +106,12 @@ export const ProjetoSlideConteudoDesc = styled.p`
   font-weight: 500;
 
   @media ${device.sm} {
+    height: 20%;
+    width: 65vw;
     font-size: 12px;
+    text-align: center;
+    text-overflow: ellipsis;
+    overflow: hidden;
   }
 
   @media ${device.md} {
@@ -123,7 +131,8 @@ export const ProjetoSlideConteudoTecs = styled.p`
 
   @media ${device.sm} {
     font-size: 12px;
-    text-overflow: ellipsis;
+    text-overflow: ellipsis; /* enables ellipsis */
+    white-space: nowrap; /* keeps the text in a single line */
   }
 
   @media ${device.lg} {
@@ -167,6 +176,7 @@ export const ProjetoImgP = styled.p`
   }
 
   a {
+    padding-bottom: 15px;
     color: aquamarine;
   }
 `;
